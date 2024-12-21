@@ -1,0 +1,21 @@
+.result{
+    width: 100%;
+    background: #f4f6fb;
+    height: 86px;
+    border:none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result p{
+    font-size: 50px;
+    font-weight:800;
+    color: black !important;
+}
+.result span{
+    font-size: 50px;
+    font-weight:800;
+    color: #36acca !important;
+}
