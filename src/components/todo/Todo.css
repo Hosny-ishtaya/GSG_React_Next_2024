@@ -1,0 +1,14 @@
+.todo{
+    background: white;
+    width: 500px;
+    padding: 50px 50px;
+    border-radius: 6px;
+}
+.todo-date{
+    display: flex;
+    flex-direction: row;
+}
+.todo-item-container{
+    margin-top: 10px;
+
+}

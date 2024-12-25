@@ -1,0 +1,20 @@
+.todo-data{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.todo-data-side{
+    padding: 3px 12px;
+    border: 1px solid gray;
+    width: 220px;
+    border-radius: 3px;
+}
+
+.todo-data-side h2{
+  font-size: 18px;
+  font-weight: 600;   
+}
+.todo-data-side h3{
+    font-size: 16px;
+    font-weight: 600;   
+  }
