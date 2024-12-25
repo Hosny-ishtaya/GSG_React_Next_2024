@@ -13,7 +13,7 @@ const AddTodo = (props:Iprops) => {
       setTask({...task,[field]:value});
     }
     const handleSubmit=()=>{
-       const newTask = {...task,id:Date.now.toString()}
+       const newTask = {...task,id:Date.now().toString()}
          props.onSubmit(newTask);
       }
 

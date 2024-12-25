@@ -22,7 +22,20 @@ const Todo = () => {
     settodoItems([...todoItems, newTask]);
   };
 
-  const removeHandler = (id: string) => {};
+  const removeHandler = (id: string) => {
+    console.log("idddd",id);
+    const updatedTodos = todoItems.filter((item) => item.id !== id);
+    settodoItems(updatedTodos);
+    
+  };
+  const completeHandler=(id:string,value:boolean)=>{
+    console.log(id,value);
+    const updatedTodos = todoItems.map((item) =>
+        item.id === id ? { ...item, isCompleted: value } : item
+      );
+      settodoItems(updatedTodos);
+    
+  }
   const cT = todoItems.filter((item) => item.isCompleted).length;
   const numOfTASK = todoItems.length;
 
@@ -43,6 +56,7 @@ const Todo = () => {
             isCompleted={todoitem.isCompleted}
             urgent={todoitem.urgent}
             removeTask={removeHandler}
+            editComplete={completeHandler}
           />
         ))}
       </div>
